@@ -3,7 +3,7 @@
   <h1 class="text-center">Burgerville. Now with online orders.</h1>
   </div>
   <div class="row justify-content-md-center">
-  <img src="/assets/img/hamburger.png" alt="burger" class="burgerPic">
+  <img src="/assets/img/hamburger.jpg" alt="burger" class="burgerPic">
   </div>
   <div class="row">
     <div class="col-md-6 text-center">
@@ -13,7 +13,7 @@
           {{#unless devoured}}
             <li class="list-group-item">
                <i class="fas fa-hamburger"></i><span> </span>{{this.burger_name}}
-              <button class="btn btn-warning orderBurger {{!-- change-to-devoured --}}" data-id="{{id}}" data-devoured="{{devoured}}" data-toggle="collapse" data-target="#collapseExample{{id}}" aria-expanded="false" aria-controls="collapseExample">
+              <button class="btn btn-success orderBurger {{!-- change-to-devoured --}}" data-id="{{id}}" data-devoured="{{devoured}}" data-toggle="collapse" data-target="#collapseExample{{id}}" aria-expanded="false" aria-controls="collapseExample">
                   {{#if devoured}}Order Finished{{else}}Order{{/if}}
               </button>
               <div class="collapse" id="collapseExample{{id}}">
@@ -38,7 +38,7 @@
           {{#if devoured}}
           <li class="list-group-item">
             <i class="fas fa-hamburger"></i><span> </span>{{this.burger_name}} <br>Ordered by: {{this.order_name}}
-            <button class="btn btn-warning change-from-devoured" data-id="{{id}}" data-devoured="{{devoured}}">
+            <button class="btn btn-success change-from-devoured" data-id="{{id}}" data-devoured="{{devoured}}">
                   {{#if devoured}}Order Finished{{else}}Order{{/if}}<span> </span><i class="fas fa-check"></i>
               </button>
           </li>
@@ -55,7 +55,7 @@
       <label for="burger"></label>
       <input type="text" placeholder="Burger Name" id="newBurger" name="name" class="text-center">
     </div>
-    <button type="button" class="btn btn-warning" id="addBurger">Add</button>
+    <button type="button" class="btn btn-success" id="addBurger">Add</button>
   </form>
   </div>
   <div class="col-md-6 text-center bottom">
@@ -65,7 +65,7 @@
       <label for="customer"></label>
       <input type="text" placeholder="Enter Customer Name" id="newCustomer" name="name" class="text-center">
     </div>
-    <button type="button" class="btn btn-warning" id="addCustomer">Register</button>
+    <button type="button" class="btn btn-success" id="addCustomer">Register</button>
   </form>
     </div>
   </div>
